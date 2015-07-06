@@ -6,7 +6,38 @@
 </head>
 <body>
   <h1> Basic Math </h1>
+  <h2>
+    What happens when you try to parse the integer out of a string like "Error 404"? How about "404 Error"? Other combinations of numbers and letters? What needs to be true about the incoming string for it to be parsed correctly?
+  </h2>
+  <p>
+    console.log(parseInt("Error 404")); // returns NAN
+    console.log(parseInt("404 Error")); // returns 404
+  </p>
+  <p>
+    The String needs to lead with a number for it to parse.
+  </p>
+  <h2>
+    What happens if one (or more) of the inputs are non-numeric text (like a comma or a dollar-sign)? What errors occur, if any? What does the console output tell you?
+  </h2>
+  <p> Seems to just return NaN.
+  </p>
+  <h2> 
+    Why might you use the increment (++) or decrement (--) operators? What are some applications that you predict might come into play?
+  </h2>
+  <p> Pretty much anything we want to increment or keep track of rounds, password attempts, etc.
+    <p>
+      <h2>
+        What questions do you have?
+      </h2>
+      <p> The incrementer and decrementer seems a little funky to me or at least not like Ruby. Here's my notes:
+      </p>
+      <p>
+        var increment = (number_one++); // this value returns the original number, I assumed it would return the incremented number.
+      </p>
+      <p>
+        alert(increment + "++" + "=" + number_one); // number_one is now incremented and increment is the original number.
+      </p>
   
- 
-  </body>
-  </html>
+
+    </body>
+    </html>

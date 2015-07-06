@@ -21,3 +21,6 @@ alert(increment + "++" + "=" + number_one); // number one is now incremented.
 
 var decrement = (number_one--); // this value returns the original number
 alert(decrement + "--" + "=" + number_one); // number one is now decremented.
+
+console.log(parseInt("Error 404")); // returns NAN
+console.log(parseInt("404 Error")); // returns 404
