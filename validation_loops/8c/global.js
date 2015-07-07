@@ -1,5 +1,4 @@
 
-
 var user_input = parseInt(prompt("Please enter a number between 1 & 8"));
 counter = 0
 sum=0
