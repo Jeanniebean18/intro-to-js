@@ -26,7 +26,9 @@ var questions = [
     {
     alert ("not correct");
     }
-    counter++;
+  
+  counter++;
+  
   }
 
   alert("your score is " + score + " out of 5 questions");
