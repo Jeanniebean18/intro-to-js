@@ -7,21 +7,24 @@
 <body>
   <h1>Driver's Ed, Part 1</h1>
   <h2>
-    If you collect the user's input as a string (i.e. without using parseInt() to turn it into an integer), does == work to compare the input to the stored secret number? Would === work? Which is best?
+    Does it matter what order your if-statements are in?
   </h2>
-  <p> I did change the input to a Integer and both == and === worked. Then, I tried not changing to Integer and using ==. That worked as well. If you have two different data types that mean the same, for ex '5' and 5, that will work. If you use === with different data types, that will not work.
+  <p> It only matters if the order of alerts need to be displayed in a certain order, otherwise no, it doesn't matter.
   </p>
   <h2>
-    If you collect the user's input as an integer (i.e. by using parseInt() to turn it into an integer), can you use == to compare? ===? Which is better in this case?
+    When testing ranges, did you use &&, ||, or something else entirely (e.g. nested if-statements)? If you used &&, why is that a better choice than || (and vice-versa)?
   </h2>
-  <p> Since they would both be the same data type, either would work. </p>
+  <p> I used && for the if (user_age <= 15 && user_age >= 0) </p>
+  <p> Because the user's age must produce true for that if statement to happen. I couldn't
+    really use || is this statement as both needed to be true, not one.
+  
   <h2>
-     What is the difference between == and ===?
+     What types of input produce a value of NaN after parsing? Is it important to check for NaN values? Is it possible for a NaN value to trigger any of the other if-statements? If so, how and why?
   </h2>
-  <p> == is equal to, === is equal value and equal type. </p>
-  <h2>
-    In this case, does it make more sense to leave the user's guess as a string, or to convert it to an integer? Why? What are the relative advantages / disadvantages of each approach (particularly in terms of the types of new features that might be able to be added)?
-  </h2>
-  <p> I guess if you were going to use that number in a function or need to use math on it, then converting it would be benefical. But in this instance it doesn't seem relevant.
+  <p>If a string is parsed that cannot become an Integer, it returns NaN. </p>
+  <p>
+    If any input returns NaN, my if statement catches it and returns "not a number."
+  </p>
+
   </body>
   </html>
