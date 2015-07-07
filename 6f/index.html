@@ -1,0 +1,29 @@
+<!doctype HTML>
+<html>
+<head>
+  <title>JS Atomic 06</title>
+  <script type="text/javascript" src="global.js"></script>
+</head>
+<body>
+  <h1>Triangles</h1>
+  <h2>
+    What happens if one (or more) of the lengths aren't input correctly and thus end up as NaN?
+  </h2>
+  <p> The user gets an error stating one or more of these inputs is not a valid input.
+  </p>
+  <h2>
+   What happens if one of the lengths of the triangle is 0? Two of the lengths? All three lengths?
+  </h2>
+  <p> All conditions return not a valid triangle.</p>
+  <h2>
+     What happens if the user inputs one or more negative integers for the lengths of the triangle's legs?
+  </h2>
+  <p>Returns not a valid triangle.</p>
+  <h2>
+    Assuming errors exist, note that all of these errors come from the user inputting one or more invalid values. What are some strategies you might use to prevent this from happening (or at least to prevent those invalid values from being used).
+  </h2>
+  <p>
+    You could check to see if inputs are NaN and tell them to enter an Integer instead of a String.
+  </p>
+  </body>
+  </html>
